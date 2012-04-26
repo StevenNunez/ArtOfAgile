@@ -9,10 +9,15 @@ class StoryTeller
   end
   
   def narrate
-    @story
+    @story.each do |line|
+      puts line[:text]
+      gets.chomp
+    end
   end
 
   def response
     @response
   end
+  
+  
 end

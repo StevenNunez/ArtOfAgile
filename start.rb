@@ -1,8 +1,8 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
-
+require 'yaml'
 Dir["lib/*.rb"].each {|file| require file }
-
-story = File.read("intro.txt")
+story = YAML.load File.read("story.yaml")
+#story = [{:text => "This is a story"}, {:text => "All about how\nmy life got flip turned upside down"}] #File.read("intro.txt")
 story_teller = StoryTeller.new(story)
 
-puts story_teller.narrate
+story_teller.narrate
