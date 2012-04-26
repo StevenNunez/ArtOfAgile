@@ -7,8 +7,8 @@ role.
 
 As you walk into your new work space, and one of your new team mates
 greets you with a friendly smile and lets know that the team stand-up
-starts in 5 minutes.  You ask, “Gee, what is a stand up?”  Your team
-mate responds, “Well…you are new aren’t you?”  <EXPLAIN STAND UP> You
+starts in 5 minutes.  You ask, "Gee, what is a stand up?"  Your team
+mate responds, "Well...you are new aren't you?"  <EXPLAIN STAND UP> You
 grab a glass of water from the kitchen and go back to the team space
 where the rest of the team has begun to assemble around the story
 board.
