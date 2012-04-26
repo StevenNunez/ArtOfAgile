@@ -8,10 +8,9 @@ class StoryTeller
     @response = input
   end
   
-  def narrate
-    @story.each do |line|
-      puts line[:text]
-      gets.chomp
+  def story_line
+    @story.map do |line|
+      line[:text]
     end
   end
 
@@ -19,5 +18,9 @@ class StoryTeller
     @response
   end
   
+  def paginate
+    puts "Press Enter to continue..."
+    gets.chomp
+  end
   
 end
