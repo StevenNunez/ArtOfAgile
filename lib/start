@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'yaml'
 Dir["lib/*.rb"].each {|file| require file }
@@ -11,3 +13,4 @@ story.each do |frame|
   score += frame.ask_question_and_get_score
 end
 
+puts "Thank you for participating.  Good luck, and may the Agile be with you!"
