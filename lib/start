@@ -4,6 +4,18 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'yaml'
 Dir["lib/*.rb"].each {|file| require file }
 
+positive_response = %q{Awesome! You're well on your way to being an Agile developer!
+You're clearly excited about working in an engaging and
+collaborative development environment! To take it to the next
+level visit http://www.artofagilenyc.com!}
+
+negative_response = %q{Ruh-roh. Agile teams rely on engagement and cooperation.
+Remember to keep engaged! If you think you're ready for the
+challenge (We do!) please visit http://www.artofagilenyc.com.}
+  
+neutral_response = %q{Hrmm. Not bad, but you gotta kick it up a notch! Remember, you
+are a valuable member of the team. And gosh darnit people like
+you! To learn more visit http://www.artofagilenyc.com!}
 
 score = 0
 story = YAML.load File.read("story.yaml")
@@ -13,4 +25,13 @@ story.each do |frame|
   score += frame.ask_question_and_get_score
 end
 
+if score > 0
+  puts positive_response
+elsif score < 0
+  puts negative_response
+else
+  puts neutral_response
+end
+
+puts ""
 puts "Thank you for participating.  Good luck, and may the Agile be with you!"

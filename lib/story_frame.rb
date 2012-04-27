@@ -49,6 +49,7 @@ class StoryFrame
       puts @question
       display_choices_and_get_response
     else
+      puts ""
       puts "Press ENTER to continue..."
       gets
       return 0
