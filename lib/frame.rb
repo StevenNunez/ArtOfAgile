@@ -1,5 +1,7 @@
 class StoryFrame
   
+  attr_reader :text, :question, :choices
+
   def initialize(frame)
     @text = frame[:text]
     @question = frame[:question]
@@ -17,5 +19,4 @@ class StoryFrame
       puts choice[:text]
     end
   end
-
 end
