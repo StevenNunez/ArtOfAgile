@@ -45,6 +45,7 @@ class StoryFrame
   def ask_question_and_get_score
     
     if @question
+      puts ""
       puts @question
       display_choices_and_get_response
     else
@@ -57,7 +58,9 @@ class StoryFrame
 
   def show_response(response)
     if @choices
+      puts ""
       puts "#{@choices[response][:response]}"
+      puts ""
     end
   end
 
