@@ -58,12 +58,12 @@
     :text: You mumble something about being new so you have nothing to say.
   - :score: 1
     :response: "\"Good question!\" says Luke. \"We'll table that for after the meeting.\""
-    :text: "You introduce yourself and ask \"What's a commitment?\" Best to be open\n\
-            and honest."
+    :text: "You introduce yourself and ask \"What's a commitment?\"\n\
+            \tBest to be open and honest."
   - :score: -1
     :response: "\"Dude! Not cool!\" Luke is unhappy."
-    :text: "You start making up some project issues and also voice concern about\n\
-            making the commitment. You just want to fit in."
+    :text: "You start making up some project issues and also voice \n\
+            \tconcern about making the commitment. You just want to fit in."
   :text: "\n\
     As you look around the dev room, your new \"home-away-from-home\", you\n\ 
     see a lot of graphs and charts, a board with a bunch of cards and\n\
