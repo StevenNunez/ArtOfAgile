@@ -1,0 +1,21 @@
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+require 'yaml'
+Dir["lib/*.rb"].each {|file| require file }
+
+puts "########################################"
+story = YAML.load File.read("story.yaml")
+story.each do |frame|
+  frame = StoryFrame.new(frame)
+  frame.display_text
+  frame.ask_question
+  gets.chomp
+end
+
+#story = [{:text => "This is a story"}, {:text => "All about how\nmy life got flip turned upside down"}] #File.read("intro.txt")
+# story_teller = StoryTeller.new(story)
+
+# story_teller.story_line.each do |line|
+#   puts line
+#   story_teller.display_question
+#   story_teller.paginate
+# end
