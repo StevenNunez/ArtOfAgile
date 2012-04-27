@@ -17,17 +17,22 @@ class StoryFrame
 
     if @choices.respond_to? :each_with_index
       @choices.each_with_index do |choice, index|
-        puts "#{index +1}. #{choice[:text]}"
+        puts "    #{index +1}. #{choice[:text]}"
       end 
-
-      response = gets.strip.to_i - 1
-      
-      puts "#{@choices[response][:response]}"
     else
       puts "Press ENTER to continue..."
     end
 
+    response = gets
+    if ! response.nil?
+      response.strip.to_i - 1
+    end
+
     return 0
+  end
+
+  def show_response(response)
+    puts "#{@choices[response][:response]}"
   end
 
 end
