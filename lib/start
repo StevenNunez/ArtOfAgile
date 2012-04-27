@@ -3,12 +3,12 @@ require 'yaml'
 Dir["lib/*.rb"].each {|file| require file }
 
 puts "########################################"
+score = 0
 story = YAML.load File.read("story.yaml")
 story.each do |frame|
   frame = StoryFrame.new(frame)
   frame.display_text
-  frame.ask_question
-  gets.chomp
+  score += frame.ask_question_and_get_score
 end
 
 #story = [{:text => "This is a story"}, {:text => "All about how\nmy life got flip turned upside down"}] #File.read("intro.txt")

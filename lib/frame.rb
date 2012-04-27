@@ -12,11 +12,15 @@ class StoryFrame
     puts @text
   end
 
-  def ask_question
+  def ask_question_and_get_score
     puts @question
 
     @choices.each do |choice|
       puts choice[:text]
     end
+
+    response = gets.strip
+    return 0
   end
+
 end
