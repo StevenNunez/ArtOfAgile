@@ -11,4 +11,10 @@ class TestStoryFrame < Test::Unit::TestCase
     assert_equal ["choice1","choice2"], frame.choices
   end
 
+  def test_no_exception_when_no_choices
+    frame = StoryFrame.new({:text => "dummy", :question => "Q"})
+
+    assert_nothing_raised { frame.ask_question_and_get_score }
+  end
+
 end

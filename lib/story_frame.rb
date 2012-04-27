@@ -19,19 +19,30 @@ class StoryFrame
     puts @question
     puts "-" * 20
 
-    @choices.each_with_index do |choice, index|
-      puts "#{index +1}. #{choice[:text]}"
-    end 
-    
+
+    if @choices.respond_to? :each_with_index
+      @choices.each_with_index do |choice, index|
+        puts "    #{index +1}. #{choice[:text]}"
+      end 
+    else
+      puts "Press ENTER to continue..."
+    end
+
     print "-" * 20
     puts ""
 
-    response = gets.strip.to_i - 1
-    
+    response = gets
+    if ! response.nil?
+      response.strip.to_i - 1
+    end
     puts "#{@choices[response][:response]}\n"
     puts "Press Enter to continue"
     gets
     return 0
+  end
+
+  def show_response(response)
+    puts "#{@choices[response][:response]}"
   end
 
 end
