@@ -15,8 +15,11 @@ class StoryFrame
   end
 
   def ask_question_and_get_score
-    
-    puts @question if @question
+    if @question
+    puts ""
+    puts @question
+    puts ""
+  end
     puts "-" * 20
 
     if @choices.respond_to? :each_with_index
@@ -29,6 +32,7 @@ class StoryFrame
 
 
     puts "-" * 20
+    
     print "--> "
 
     response = gets.chomp.to_i - 1 
@@ -42,7 +46,9 @@ class StoryFrame
 
   def show_response(response)
     if @choices
+    puts ""
     puts "#{@choices[response][:response]}"
+    puts ""
   end
   end
 
