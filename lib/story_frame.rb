@@ -19,7 +19,6 @@ class StoryFrame
     puts @question if @question
     puts "-" * 20
 
-
     if @choices.respond_to? :each_with_index
       @choices.each_with_index do |choice, index|
         puts "    #{index +1}. #{choice[:text]}"
@@ -27,6 +26,7 @@ class StoryFrame
     else
       puts "Press ENTER to continue..."
     end
+
 
     puts "-" * 20
     print "--> "
