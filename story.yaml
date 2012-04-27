@@ -18,8 +18,8 @@
     :response: "\"Hey man, that's the way to the kitchen. The conference room\n\
 	  is this way!\" Luke says."
     :text: "You consider making yourself scarce in 5 minutes. Change is\n\
-hard and you have no desire to be part of a \"stand-up\". You\n\
-drop your head and head to the kitchen."
+       \thard and you have no desire to be part of a \"stand-up\". You\n\
+       \tdrop your head and head to the kitchen."
   :text: "\n\
     It's a beautiful fall day in New York. After a surprisingly easy subway\n\
     ride, you walk into your new office building and dev room. One of your\n\

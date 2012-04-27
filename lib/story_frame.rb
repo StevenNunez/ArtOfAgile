@@ -21,7 +21,7 @@ class StoryFrame
       puts "-" * 20
 
       @choices.each_with_index do |choice, index|
-        puts "    #{index +1}. #{choice[:text]}"
+        puts "    #{index +1}.\t#{choice[:text]}"
       end 
       puts "-" * 20
       print "--> "
