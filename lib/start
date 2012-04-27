@@ -2,7 +2,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'yaml'
 Dir["lib/*.rb"].each {|file| require file }
 
-puts "########################################"
+
 score = 0
 story = YAML.load File.read("story.yaml")
 story.each do |frame|
