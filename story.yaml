@@ -5,8 +5,8 @@
 
   :choices: 
   - :score: 1
-    :response: Yeah!
-    :text: Alright, here goes!
+    :response: "Yeah!"
+    :text: "Alright, here goes!"
   :text: "\n\
     Good morning! It is your first day of work at your new job. You have\n\ 
     been hired as a team member in an agile software development shop.\n\
@@ -16,36 +16,79 @@
     see how it all unfolds.\n"
 - :question: |
     
-    What do you do?
+    "What do you do?"
 
   :choices: 
   - :score: 1
     :response: "\"Hahah, don't look so scared,\" Luke says."
-    :text: Smile politely and say nothing. You'll Google "stand-up" later.
+    :text: "Smile politely and say nothing. You'll Google 'stand-up' later."
   - :score: 1
     :response: "\"Oh, right! This is your first Agile team - how exciting!\" Luke says."
-    :text: You ask, "What's a stand-up?"
+    :text: "You ask, 'What's a stand-up?'"
   - :score: 1
-    :response: "\"Hey man, that's the way to the kitchen. The story board is this way!\" Luke says."
+    :response: "\"Hey man, that's the way to the kitchen. The conference room is this way!\" Luke says."
     :text: "You consider making yourself scarce in 5 minutes. Change is\n\
-	        hard and you have no desire to be part of a \"stand-up\". You\n\
-			drop your head and head to the kitchen."
+            hard and you have no desire to be part of a \"stand-up\". You\n\
+            drop your head and head to the kitchen."
   :text: "\n\
     It's a beautiful fall day in New York. After a surprisingly easy subway\n\
     ride, you walk into your new office building and dev room. One of your\n\
     new teammates greets you with a friendly smile and introduces himself as\n\
-	Luke. Luke lets you know that the team stand-up starts in 5 minutes. You\n\
-	have no idea what he is talking about.\n"
+    Luke. Luke lets you know that the team stand-up starts in 5 minutes. You\n\
+    have no idea what he is talking about.\n"
+- :question: |
+    
+    What do you do?
+
+  :choices: 
+  - :score: 1
+    :response: "Luke comes over and says, \"I realize this is a lot to take in\n\
+                but it's called stand-up for a reason!"
+    :text: Sit down on the nearest chair. Man, the first day is tiring!
+  - :score: 1
+    :response: "Luke comes over and says, \"You're part of the team here so come\n\
+                on over to the board."
+    :text: Stand off to the side, you really don't feel part of the team yet.
+  - :score: 1
+    :response: The team opens up the circle to include you and you step in.
+    :text: Join your new team at the story board.
+  :text: "\n\
+    He continues, \"Stand-up is a daily meeting in which the team focuses\n\
+    on getting the iteration done. Many teams have their own formats for\n\
+    this meeting. We usually focus on communicating to each other what\n\
+    progress we made yesterday and what we learned in the process, also\n\
+    what is impeding us today and how confident we are in meeting our\n\
+    commitment.\"\n\
+    \n\
+    You wonder what iteration and commitment mean but decide to ask that\n\
+    later. You find your way to the kitchen, grab a glass of water and go\n\
+    back to the dev room, where the rest of the team has begun to assemble\n\
+    around the story board."
 - :question: |
     
     Second question?
 
   :choices: 
   - :score: 1
-    :response: bad choice, dude!
-    :text: choice 1
+    :response: The team awkwardly responds to your awkwardness and seems confused.
+    :text: You mumble something about being new so you have nothing to say.
   - :score: 1
-    :response: better choice, dude!
-    :text: choice 2
+    :response: "Good question!\" says Luke. \"We'll table that for after the meeting."
+    :text: "You introduce yourself and ask 'what's a commitment?' Best to be open and honest."
+  - :score: 1
+    :response: "Dude! Not cool! Luke is unhappy."
+    :text: "You start making up some project issues and also voice concern about making the commitment. You just want to fit in."
   :text: "\n\
-    Story page 2\n  "
+    As you look around the dev room, your new 'home-away-from-home', you\n\ 
+    see a lot of graphs and charts, a board with a bunch of cards and\n\
+    post-it stuck to it, family pictures, plants, posters, pictures of the\n\
+    developers at McSorleys. You remind yourself to bring your plant and\n\
+    a picture of Zeus, your chihuahua. One of the team members speaks up\n\
+    and begins to talk about some things that happened yesterday and what\n\
+    he is planning on working on today. He mentions some concerns he has\n\
+    about making the commitment. There's that word again, you think. Other\n\ 
+    team members take their turn around the circle giving similar reports\n\
+    and now it is your turn. What do you say?\n"
+- :text: "\n\
+    Everyone welcomes you to the team.  Your first stand-up is over! The\n\
+    team disbands and heads out for lunch.\n"
