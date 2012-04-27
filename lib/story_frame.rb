@@ -15,13 +15,18 @@ class StoryFrame
   def ask_question_and_get_score
     puts @question
 
-    @choices.each_with_index do |choice, index|
-      puts "#{index +1}. #{choice[:text]}"
-    end 
+    if @choices.respond_to? :each_with_index
+      @choices.each_with_index do |choice, index|
+        puts "#{index +1}. #{choice[:text]}"
+      end 
 
-    response = gets.strip.to_i - 1
-    
-    puts "#{@choices[response][:response]}"
+      response = gets.strip.to_i - 1
+      
+      puts "#{@choices[response][:response]}"
+    else
+      puts "Press ENTER to continue..."
+    end
+
     return 0
   end
 
