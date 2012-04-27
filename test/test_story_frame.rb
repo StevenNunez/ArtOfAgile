@@ -17,4 +17,20 @@ class TestStoryFrame < Test::Unit::TestCase
     assert_nothing_raised { frame.ask_question_and_get_score }
   end
 
+  def test_does_not_ask_question_if_story_does_not_have_it
+    frame = StoryFrame.new({:text => "dummy",
+                             :choices => ["FAIL THE TEST","FAIL THE TEST","FAIL THE TEST"]
+                           })
+
+    assert_nothing_raised { frame.ask_question_and_get_score }
+  end
+
+  def test_does_not_ask_question_if_story_does_not_have_it
+    frame = StoryFrame.new({:text => "dummy",
+                             :choices => ["FAIL THE TEST","FAIL THE TEST","FAIL THE TEST"]
+                           })
+
+    assert_nothing_raised { frame.display_choices }
+  end
+
 end

@@ -14,11 +14,7 @@ class StoryFrame
     puts @text
   end
 
-  def ask_question_and_get_score
-    
-    puts @question if @question
-    puts "-" * 20
-
+  def display_choices
     if @choices.respond_to? :each_with_index
       @choices.each_with_index do |choice, index|
         puts "    #{index +1}. #{choice[:text]}"
@@ -26,24 +22,33 @@ class StoryFrame
     else
       puts "Press ENTER to continue..."
     end
+  end
 
-
-    puts "-" * 20
-    print "--> "
-
-    response = gets.chomp.to_i - 1 
-  
-    show_response response
+  def ask_question_and_get_score
     
-    puts "Press Enter to continue"
-    gets
+    if @question
+      puts @question
+      puts "-" * 20
+
+      display_choices
+
+      puts "-" * 20
+      print "--> "
+
+      response = gets.chomp.to_i - 1 
+      show_response response
+      puts "Press Enter to continue"
+      gets
+      return @choices[response][:score]
+    end
+
     return 0
   end
 
   def show_response(response)
     if @choices
-    puts "#{@choices[response][:response]}"
-  end
+      puts "#{@choices[response][:response]}"
+    end
   end
 
 end

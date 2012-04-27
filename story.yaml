@@ -1,6 +1,5 @@
 --- 
-- :question: Let's get started!
-  :text: "\n\
+- :text: "\n\
     Good morning! It is your first day of work at your new job. You have\n\ 
     been hired as a team member in an agile software development shop.\n\
     \n\
@@ -9,13 +8,13 @@
     see how it all unfolds.\n"
 - :question: What do you do?
   :choices: 
-  - :score: 1
+  - :score: 0
     :response: "\"Hahah, don't look so scared,\" Luke says."
     :text: Smile politely and say nothing. You'll Google "stand-up" later.
   - :score: 1
     :response: "\"Oh, right! This is your first Agile team - how exciting!\" Luke says."
     :text: You ask, "What's a stand-up?"
-  - :score: 1
+  - :score: -1
     :response: "\"Hey man, that's the way to the kitchen. The conference room\n\
 	             is this way!\" Luke says."
     :text: "You consider making yourself scarce in 5 minutes. Change is\n\
@@ -29,11 +28,11 @@
     have no idea what he is talking about.\n"
 - :question: What do you do?
   :choices: 
-  - :score: 1
+  - :score: -1
     :response: "Luke comes over and says, \"I realize this is a lot to take in\n\
                 but it's called stand-up for a reason!"
     :text: Sit down on the nearest chair. Man, the first day is tiring!
-  - :score: 1
+  - :score: -1
     :response: "Luke comes over and says, \"You're part of the team here so come\n\
                 on over to the board."
     :text: Stand off to the side, you really don't feel part of the team yet.
@@ -54,14 +53,14 @@
     around the story board."
 - :question: Second question?
   :choices: 
-  - :score: 1
+  - :score: -1
     :response: The team awkwardly responds to your awkwardness and seems confused.
     :text: You mumble something about being new so you have nothing to say.
   - :score: 1
     :response: "\"Good question!\" says Luke. \"We'll table that for after the meeting.\""
     :text: "You introduce yourself and ask \"What's a commitment?\" Best to be open\n\
             and honest."
-  - :score: 1
+  - :score: -1
     :response: "\"Dude! Not cool!\" Luke is unhappy."
     :text: "You start making up some project issues and also voice concern about\n\
             making the commitment. You just want to fit in."
