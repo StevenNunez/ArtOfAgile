@@ -9,31 +9,41 @@ class StoryFrame
   end
 
   def display_text
+    system('clear')
+    print "\n########################################"
     puts @text
   end
 
   def ask_question_and_get_score
+    
     puts @question if @question
+    puts "-" * 20
 
     if @choices.respond_to? :each_with_index
       @choices.each_with_index do |choice, index|
         puts "    #{index +1}. #{choice[:text]}"
       end 
-      print "--> "
     else
       puts "Press ENTER to continue..."
     end
 
-    response = gets
-    if response
-      response.strip.to_i - 1
-    end
 
+    puts "-" * 20
+    print "--> "
+
+    response = gets.chomp.to_i - 1 
+  
+    show_response response
+    
+    puts "Press Enter to continue"
+    gets
     return 0
   end
 
   def show_response(response)
+    if @choices
     puts "#{@choices[response][:response]}"
+  end
   end
 
 end
