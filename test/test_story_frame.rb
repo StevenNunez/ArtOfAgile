@@ -24,7 +24,7 @@ class TestStoryFrame < Test::Unit::TestCase
                              :choices => ["FAIL THE TEST","FAIL THE TEST","FAIL THE TEST"]
                            })
 
-    assert_nothing_raised { frame.display_choices }
+    assert_nothing_raised { frame.display_choices_and_get_response }
   end
 
 end
