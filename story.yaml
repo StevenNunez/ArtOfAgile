@@ -1,12 +1,5 @@
 --- 
-- :question: |
-    
-    Let's get started!
-
-  :choices: 
-  - :score: 1
-    :response: "Yeah!"
-    :text: "Alright, here goes!"
+- :question: Let's get started!
   :text: "\n\
     Good morning! It is your first day of work at your new job. You have\n\ 
     been hired as a team member in an agile software development shop.\n\
@@ -14,19 +7,17 @@
     You're excited about being a member of an agile team for the first\n\
     time ever and nervous about what you've gotten yourself into. Let's\n\
     see how it all unfolds.\n"
-- :question: |
-    
-    "What do you do?"
-
+- :question: What do you do?
   :choices: 
   - :score: 1
     :response: "\"Hahah, don't look so scared,\" Luke says."
-    :text: "Smile politely and say nothing. You'll Google 'stand-up' later."
+    :text: Smile politely and say nothing. You'll Google "stand-up" later.
   - :score: 1
     :response: "\"Oh, right! This is your first Agile team - how exciting!\" Luke says."
-    :text: "You ask, 'What's a stand-up?'"
+    :text: You ask, "What's a stand-up?"
   - :score: 1
-    :response: "\"Hey man, that's the way to the kitchen. The conference room is this way!\" Luke says."
+    :response: "\"Hey man, that's the way to the kitchen. The conference room\n\
+	             is this way!\" Luke says."
     :text: "You consider making yourself scarce in 5 minutes. Change is\n\
             hard and you have no desire to be part of a \"stand-up\". You\n\
             drop your head and head to the kitchen."
@@ -36,10 +27,7 @@
     new teammates greets you with a friendly smile and introduces himself as\n\
     Luke. Luke lets you know that the team stand-up starts in 5 minutes. You\n\
     have no idea what he is talking about.\n"
-- :question: |
-    
-    What do you do?
-
+- :question: What do you do?
   :choices: 
   - :score: 1
     :response: "Luke comes over and says, \"I realize this is a lot to take in\n\
@@ -64,22 +52,21 @@
     later. You find your way to the kitchen, grab a glass of water and go\n\
     back to the dev room, where the rest of the team has begun to assemble\n\
     around the story board."
-- :question: |
-    
-    Second question?
-
+- :question: Second question?
   :choices: 
   - :score: 1
     :response: The team awkwardly responds to your awkwardness and seems confused.
     :text: You mumble something about being new so you have nothing to say.
   - :score: 1
-    :response: "Good question!\" says Luke. \"We'll table that for after the meeting."
-    :text: "You introduce yourself and ask 'what's a commitment?' Best to be open and honest."
+    :response: "\"Good question!\" says Luke. \"We'll table that for after the meeting.\""
+    :text: "You introduce yourself and ask \"What's a commitment?\" Best to be open\n\
+            and honest."
   - :score: 1
-    :response: "Dude! Not cool! Luke is unhappy."
-    :text: "You start making up some project issues and also voice concern about making the commitment. You just want to fit in."
+    :response: "\"Dude! Not cool!\" Luke is unhappy."
+    :text: "You start making up some project issues and also voice concern about\n\
+            making the commitment. You just want to fit in."
   :text: "\n\
-    As you look around the dev room, your new 'home-away-from-home', you\n\ 
+    As you look around the dev room, your new \"home-away-from-home\", you\n\ 
     see a lot of graphs and charts, a board with a bunch of cards and\n\
     post-it stuck to it, family pictures, plants, posters, pictures of the\n\
     developers at McSorleys. You remind yourself to bring your plant and\n\
