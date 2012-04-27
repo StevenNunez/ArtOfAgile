@@ -1,25 +1,41 @@
 --- 
 - :question: |
     
-    How are you?
+    Let's get started!
 
   :choices: 
   - :score: 1
-    :response: bad choice, dude!
-    :text: choice 1
-  - :score: 1
-    :response: better choice, dude!
-    :text: choice 2
+    :response: Yeah!
+    :text: Alright, here goes!
   :text: "\n\
-    Good morning!  It is your first day of work at your new job.  You have\n\
+    Good morning! It is your first day of work at your new job. You have\n\ 
     been hired as a team member in an agile software development shop.\n\
+    \n\
     You're excited about being a member of an agile team for the first\n\
-    time ever and nervous about what you've gotten yourself into.  Let's\n\
-    see how it all unfolds.  It's a beautiful fall day in New York. After\n\
-    a surprisingly easy subway\n\
-    ride, you walk into your new office building and dev room, One of your\n\
-    new team mates greets you with a friendly smile and lets know that the\n\
-    team stand-up starts in 5 minutes.\n"
+    time ever and nervous about what you've gotten yourself into. Let's\n\
+    see how it all unfolds.\n"
+- :question: |
+    
+    What do you do?
+
+  :choices: 
+  - :score: 1
+    :response: "\"Hahah, don't look so scared,\" Luke says."
+    :text: Smile politely and say nothing. You'll Google "stand-up" later.
+  - :score: 1
+    :response: "\"Oh, right! This is your first Agile team - how exciting!\" Luke says."
+    :text: You ask, "What's a stand-up?"
+  - :score: 1
+    :response: "\"Hey man, that's the way to the kitchen. The story board is this way!\" Luke says."
+    :text: "You consider making yourself scarce in 5 minutes. Change is\n\
+	        hard and you have no desire to be part of a \"stand-up\". You\n\
+			drop your head and head to the kitchen."
+  :text: "\n\
+    It's a beautiful fall day in New York. After a surprisingly easy subway\n\
+    ride, you walk into your new office building and dev room. One of your\n\
+    new teammates greets you with a friendly smile and introduces himself as\n\
+	Luke. Luke lets you know that the team stand-up starts in 5 minutes. You\n\
+	have no idea what he is talking about.\n"
 - :question: |
     
     Second question?
