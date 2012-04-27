@@ -19,7 +19,7 @@ class StoryFrame
       @choices.each_with_index do |choice, index|
         puts "    #{index +1}. #{choice[:text]}"
       end 
-      puts "Please select your response and press ENTER."
+      print "--> "
     else
       puts "Press ENTER to continue..."
     end
